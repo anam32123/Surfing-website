@@ -1,0 +1,40 @@
+body{
+  font-family:"Verdana";
+  padding: 20px;
+}
+
+img{
+  padding:1%
+}
+iframe{padding:1%}
+p{padding: 1%}
+.padding{padding:1%}
+.nopadding{padding:0px}
+.float{float:left;}
+.clear{clear:both;}
+.height{height:250px}
+.right{float:right}
+h1,h2,h3,b{color:#4287f5}
+.kelly{height:400;
+width:100%}
+.rightclear{clear:right;}
+#mens{
+  width:40%;
+}
+#women{
+  width:40%;
+}
+button{
+  height:75px;
+  width:200px;
+  background-color:#4287f5;
+  color:white;
+  font-size:24;
+  font-family: "Verdana";
+  border-radius:7px;
+}
+button:hover{
+  cursor:pointer;
+  background-color:#3474d9;
+  border-style: inset;
+}
