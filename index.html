@@ -7,114 +7,20 @@
     <script src="./surfing.js"></script>
   <head>
   <body>
-<center><h1>Surfing</h1></center>
+<a href="index.html" id="header"><center><h1>Surfing</h1></center></a>
+
+<div id="nav">
+  <div class="pagelink">
+    <a href="competition.html">Competitions</a>
+  </div>
+  <div class="pagelink">
+    <a href="surfers.html">Surfers</a>
+  </div>
+</div>
 
 <center><img src="./coverimage.webp" alt="Surfing Cover Photo. John John Florence at Pipeline."></center>
 
 <p>Surfing is a sport that is currently gaining popularity. Originally from the islands of Polynesia, it was brought to the rest of the world from Hawai’i. Many of the world’s best surfers still hail from Hawai’i. Surfing is unique in that it is more than a sport, it is a lifestyle and pastime. Some of the best surfers in the world do not even surf in competitions.</p>
-
-<div>
-
-  <a href="./competition.html"><h2>Competitions:</h2></a>
-
-<p>The <a href="https://www.worldsurfleague.com">World Surf League (WSL)</a> is the main governing body for competitive surfing. They organize competitions around the world, including Championship Tour (CT) and Qualifying Series (QS) events. The Championship Tour is the top tier of surfing in the world, consisting of ten or eleven events per year at the best breaks and spots, that ultimately determine the world champion. The QS consists of the surfers competing for a spot on the CT. This year, the WSL became the first American sports league to offer equal prize money for men and women.</p>
-
-<p>The International Surfing Association (ISA) also organizes surfing events where nation’s teams compete against each other for the world titles.</p>
-
-<p>Next year, surfing will be an olympic sport for the first time!</p>
-
-<h3>How Surf Competitions Work</h3>
-
-<img src="format.jpg" class="right" width="600" height="337" alt="WSL Championship Tour Event Format">
-<p>Surf competitions are usually allotted several days to run. This allows for some off days where the competition will not occur due to lower-quality surf. The entire competition usually takes around 4 days to run. Some will take more or less time. Generally, surfers surf in two-, three-, or four-person heats, with the top one or two moving on to the next round and the rest eliminated. This continues in a bracket format until there is a 2-4 surfer final heat. This format can vary depending on the competition. For example, some events have rounds without eliminations, while ones taking place in wave pools require different formats. </p>
-
-<p>In heats, surfers spend an allotted period of time alone in the water trying to catch waves that will give them the highest heat score. Each wave they ride is individually scored on a scale of 1 to 10, based on factors like number and degree of difficulty of maneuvers, execution of maneuvers, commitment/risk on the wave, and wave choice. 5 judges each score the wave. Then the average of the three middle scores becomes the wave score. Then, the heat score is made up of the sum of the two highest wave scores. A set of rules called priority governs who can catch which waves, prevents surfers from stealing waves from each other, and avoids dangerous and unsportsmanlike situations. The judging and heat system can vary for specialty events and events in wave pools. The WSL also occasionally runs an overlapping heat format where multiple heats will run in the water at the same time.</p>
-
-<script>
-  function myFunction(){
-    var x = document.getElementById("hiddenMessage")
-    if (x.style.display === "none") {
-      x.style.display="block";
-      document.getElementById("button").innerHTML="Click here to hide the rankings"
-    } else{
-      x.style.display="none";
-    }
-  }
-</script>
-
-
-<button type="button" onclick="myFunction()" id="button" height="100" width="200">Click here to see the current WSL CT Rankings!</button>
-
-<div id="hiddenMessage" style="display:none">
-  <div class="float" id="mens">
-    <h3>Men's CT Rankings</h3>
-    <p> 1 - Kolohe Andino (USA)</p>
-    <p> 2 - Filipe Toledo (Brazil)</p>
-    <p> 3 - John John Florence (Hawai'i)</p>
-    <p> 4 - Italo Ferreira (Brazil)</p>
-    <p> 5 - Kanoa Igarashi (Japan)</p>
-    <p> 6 - Jordy Smith (South Africa)</p>
-    <p> 7 - Gabriel Medina (Brazil)</p>
-    <p> 8 - Kelly Slater (USA)</p>
-    <p> 9 - Ryan Callinan (Australian)</p>
-    <p>10 - Julian Wilson (Australia)</p>
-    <p>11 - Michel Bourez (France)</p>
-    <p>12 - Owen Wright (Australia)</p>
-    <p>12 - Conner Coffin (USA)</p>
-    <p>14 - Seth Moniz (Hawai'i)</p>
-    <p>15 - Wade Carmichael (Australia)</p>
-    <p>16 - Jeremy Flores (France)</p>
-    <p>17 - Michael Rodrigues (Brazil)</p>
-    <p>18 - Willian Cardoso (Brazil)</p>
-    <p>18 - Deivid Silva (Brazil)</p>
-    <p>20 - Peterson Crisanto (Brazil)</p>
-    <p>21 - Adrian Buchan (Australia)</p>
-    <p>22 - Caio Ibelli (Brazil)</p>
-    <p>23 - Sebastian Zietz (Hawai'i)</p>
-    <p>24 - Joan Duru (France)</p>
-    <p>25 - Yago Dora (Brazil)</p>
-    <p>25 - Jack Freestone (Australia)</p>
-    <p>27 - Jesse Mendes (Brazil)</p>
-    <p>28 - Griffin Colapinto (USA)</p>
-    <p>28 - Ezekiel Lau (Hawai'i)</p>
-    <p>30 - Ricardo Christie (New Zealand)</p>
-    <p>31 - Frederico Morais (Portugal)</p>
-    <p>32 - Soli Bailey (Australia)</p>
-    <p>33 - Mikey Wright (Australia)</p>
-    <p>33 - Leonardo Fioravanti (Italy)</p>
-    <p>35 - Jadson Andre (Brazil)</p>
-    <p>36 - Jacob Wilcox (Australia)</p>
-    <p>37 - Reef Heazlewood (Australia)</p>
-    <p>38 - Adriano de Souza (Brazil)</p>
-    <p>39 - Jack Robinson (Australia)</p>
-    <p>40 - Mateus Herdy (Brazil)</p>
-  </div>
-  <div class="float" id="women">
-    <h3>Women's CT Rankings</h3>
-    <p>1 - Carissa Moore (Hawai'i)</p>
-    <p>2 - Sally Fitzgibbons (Australia)</p>
-    <p>3 - Stephanie Gilmore (Australia)</p>
-    <p>4 - Lakey Peterson (USA)</p>
-    <p>5 - Caroline Marks (USA)</p>
-    <p>6 - Courtney Conlogue (USA)</p>
-    <p>7 - Malia Manuel (Hawai'i)</p>
-    <p>8 - Tatiana Weston-Webb (Brazil)</p>
-    <p>9 - Brisa Hennessy (Costa Rica)</p>
-    <p>10 - Johanne Defay (France)</p>
-    <p>11 - Bronte Macaulay (Australia)</p>
-    <p>12 - Nikki Van Dijk (Australia)</p>
-    <p>13 - Silvana Lima (Brazil)</p>
-    <p>14 - Coco Ho (Hawai'i)</p>
-    <p>15 - Keely Andrew (Australia)</p>
-    <p>16 - Paige Hareb (New Zealand)</p>
-    <p>16 - Macy Callaghan (Australia)</p>
-    <p>18 - Sage Erickson (USA)</p>
-    <p>19 - Tyler Wright (Australia)</p>
-    <img src="wsl.jpg" width="600" height="315" class="float" class="rightclear" alt="World Surf League logo">
-    <img src="wsl2.jpg" width="600" height="336" class="float" class="rightclear" alt="John John Florence after winning the world title in 2016">
-    <img src="wsl4.jpg" width="600" height="347.5" class="float" class="rightclear" alt="Lakey Peterson after winning the 2018 Corona Bali Protected">
-  </div>
-</div>
 
 <h2 class="clear">Notable surfers:</h2>
 
