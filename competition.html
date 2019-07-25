@@ -4,7 +4,7 @@
 
   <head>
         <link rel="stylesheet" type="text/css" href="styleSheet.css">
-    <title>Surfing - Competitions</title>
+        <title>Surfing - Competitions</title>
   </head>
   <body>
     <a href="index.html" id="header" style="text-decoration:none"><center><h1>Surfing</h1></center></a>
@@ -19,7 +19,6 @@
       <div class="pagelink">
         <a href="spots.html">Surf Spots</a>
     </div>
-    <br>
     <h2>Competitions:</h2>
 
     <p>The <a href="https://www.worldsurfleague.com">World Surf League (WSL)</a> is the main governing body for competitive surfing. They organize competitions around the world, including Championship Tour (CT) and Qualifying Series (QS) events. The Championship Tour is the top tier of surfing in the world, consisting of ten or eleven events per year at the best breaks and spots, that ultimately determine the world champion. The QS consists of the surfers competing for a spot on the CT. This year, the WSL became the first American sports league to offer equal prize money for men and women.</p>
@@ -43,6 +42,7 @@
           document.getElementById("button").innerHTML="Click here to hide the rankings"
         } else{
           x.style.display="none";
+          document.getElementById("button").innerHTML="Click here to see the current WSL CT Rankings"
         }
       }
     </script>
@@ -120,5 +120,33 @@
         <img src="wsl4.jpg" width="600" height="347.5" class="float" class="rightclear" alt="Lakey Peterson after winning the 2018 Corona Bali Protected">
       </div>
     </div>
+    <script>
+      function showTour(){
+        var x = document.getElementById("tour")
+        if (x.style.display === "none") {
+          x.style.display="block";
+          document.getElementById("button1").innerHTML="Click here to hide the CT stops"
+        } else{
+          x.style.display="none";
+          document.getElementById("button1").innerHTML="Click here to show the events on the CT"
+        }
+      }
+    </script>
 
+
+    <button type="button" onclick="showTour()" id="button1" height="100" width="200">Click here to see the events on the CT this year!</button>
+
+    <div id="tour" style="display:none">
+      <p> 1. Quicksilver and Boost Mobile Pro Gold Coast (Snapper Rocks and Duranbah, Australia); Winners: Italo Ferreira (Brazil) and Caroline Marks (USA)</p>
+      <p> 2. Rip Curl Pro Bells Beach (Bells Beach, Australia); Winners: John John Florence (Hawai'i) and Courtney Conlogue (USA)</p>
+      <p> 3. Corona Bali Protected (Keramas, Bali, Indonesia); Winners: Kanoa Igarashi (Japan) and Stephanie Gilmore (Australia)</p>
+      <p> 4. Margaret River Pro (Margaret River, Australia); Winners: John John Florence (Hawai'i) and Lakey Peterson (USA)</p>
+      <p> 5. Oi Rio Pro (Saquarema, Brazil); Winners: Filipe Toledo (Brazil) and Sally Fitzgibbons (Australia)</p>
+      <p> 6. Corona Open J-Bay (Jeffrey's Bay, South Africa); Winners: Gabriel Medina (Brazil) and Carissa Moore (Hawai'i)</p>
+      <p> 7. Tahiti Pro Teahupo'o (Men's Tour only) (Teahupo'o, Tahiti, French Polynesia); Defending Champion: Gabriel Medina (Brazil)</p>
+      <p> 8. Freshwater Pro (Surf Ranch, Lemoore, California, USA); Defending Champions: Gabriel Medina (Brazil) and Carissa Moore (Hawai'i)</p>
+      <p> 9. Quicksilver and Roxy Pro France (Hossegor, France); Defending Champions: Julian Wilson (Australia) and Courtney Conlogue (USA)</p>
+      <p>10. MEO Rip Curl Pro Portugal (Peniche, Portugal); Defending Champions: Italo Ferreira (Brazil) and Carissa Moore (Hawai'i)</p>
+      <p>11. Billabong Pipe Masters (Men's Tour)/Hawaii Pro (Women's Tour) (Pipeline, Oahu, Hawai'i, USA/Honolua Bay, Maui, Hawai'i, USA); Defending Champions: Gabriel Medina (Brazil) and Carissa Moore (Hawai'i)</p>
+    </div>
   </body>
